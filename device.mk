@@ -9,10 +9,6 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -348,10 +344,6 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# PixelLiveWallpaper
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
 
 # QCOM
 PRODUCT_COPY_FILES += \
