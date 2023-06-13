@@ -13,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common keepQASSA stuff.
-$(call inherit-product, vendor/qassa/config/common_full_phone.mk)
+# Inherit some common Resurrection stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
@@ -23,7 +23,7 @@ TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
 # Device identifier
-PRODUCT_NAME := qassa_ginkgo
+PRODUCT_NAME := rr_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
