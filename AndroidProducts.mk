@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/qassa_ginkgo.mk
+    $(LOCAL_DIR)/rr_ginkgo.mk
